@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0EA62C222F7CF52500376C27 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C212F7CF52500376C27 /* main.c */; };
+		0EA62C2A2F7CF72B00376C27 /* hex_editor.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C282F7CF72A00376C27 /* hex_editor.c */; };
+		0EA62C2D2F7CFA0200376C27 /* ai_interface.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C2B2F7CFA0200376C27 /* ai_interface.c */; };
+		0EA62C302F7D04BD00376C27 /* ai_integration.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C2F2F7D04BD00376C27 /* ai_integration.c */; };
+		0EA62C322F7D0D3600376C27 /* ai_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C312F7D0D3600376C27 /* ai_main.c */; };
+		0EA62C342F7D2F8600376C27 /* ai_tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C332F7D2F8600376C27 /* ai_tcp.c */; };
+		0EA62C362F7D2F9000376C27 /* ai_main_new.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C352F7D2F9000376C27 /* ai_main_new.c */; };
+		0EA62C382F7D53F600376C27 /* aes_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C372F7D53F600376C27 /* aes_impl.c */; };
+		0EA62C3A2F7D53FD00376C27 /* aes_simple.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C392F7D53FD00376C27 /* aes_simple.c */; };
+		0EA62C3C2F7D541200376C27 /* ai_proxy.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C3B2F7D541200376C27 /* ai_proxy.c */; };
+		0EA62C3E2F7D542200376C27 /* mini_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C3D2F7D542200376C27 /* mini_aes.c */; };
+		0EA62C412F7D542F00376C27 /* sha256_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C402F7D542F00376C27 /* sha256_impl.c */; };
+		0EA62C432F7D543700376C27 /* simple_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C422F7D543700376C27 /* simple_tls.c */; };
+		0EA62C452F7D543C00376C27 /* tls_prf.c in Sources */ = {isa = PBXBuildFile; fileRef = 0EA62C442F7D543C00376C27 /* tls_prf.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +38,23 @@
 /* Begin PBXFileReference section */
 		0EA62C1E2F7CF52500376C27 /* binary */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = binary; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA62C212F7CF52500376C27 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		0EA62C282F7CF72A00376C27 /* hex_editor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hex_editor.c; sourceTree = "<group>"; };
+		0EA62C292F7CF72A00376C27 /* hex_editor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hex_editor.h; sourceTree = "<group>"; };
+		0EA62C2B2F7CFA0200376C27 /* ai_interface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ai_interface.c; sourceTree = "<group>"; };
+		0EA62C2C2F7CFA0200376C27 /* ai_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ai_interface.h; sourceTree = "<group>"; };
+		0EA62C2E2F7D04BD00376C27 /* ai_integration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ai_integration.h; sourceTree = "<group>"; };
+		0EA62C2F2F7D04BD00376C27 /* ai_integration.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ai_integration.c; sourceTree = "<group>"; };
+		0EA62C312F7D0D3600376C27 /* ai_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ai_main.c; sourceTree = "<group>"; };
+		0EA62C332F7D2F8600376C27 /* ai_tcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ai_tcp.c; sourceTree = "<group>"; };
+		0EA62C352F7D2F9000376C27 /* ai_main_new.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ai_main_new.c; sourceTree = "<group>"; };
+		0EA62C372F7D53F600376C27 /* aes_impl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_impl.c; sourceTree = "<group>"; };
+		0EA62C392F7D53FD00376C27 /* aes_simple.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_simple.c; sourceTree = "<group>"; };
+		0EA62C3B2F7D541200376C27 /* ai_proxy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ai_proxy.c; sourceTree = "<group>"; };
+		0EA62C3D2F7D542200376C27 /* mini_aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mini_aes.c; sourceTree = "<group>"; };
+		0EA62C3F2F7D542A00376C27 /* mini_tls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mini_tls.h; sourceTree = "<group>"; };
+		0EA62C402F7D542F00376C27 /* sha256_impl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha256_impl.c; sourceTree = "<group>"; };
+		0EA62C422F7D543700376C27 /* simple_tls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simple_tls.c; sourceTree = "<group>"; };
+		0EA62C442F7D543C00376C27 /* tls_prf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tls_prf.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +87,24 @@
 		0EA62C202F7CF52500376C27 /* binary */ = {
 			isa = PBXGroup;
 			children = (
+				0EA62C2E2F7D04BD00376C27 /* ai_integration.h */,
+				0EA62C2F2F7D04BD00376C27 /* ai_integration.c */,
+				0EA62C2C2F7CFA0200376C27 /* ai_interface.h */,
+				0EA62C2B2F7CFA0200376C27 /* ai_interface.c */,
+				0EA62C292F7CF72A00376C27 /* hex_editor.h */,
+				0EA62C282F7CF72A00376C27 /* hex_editor.c */,
+				0EA62C312F7D0D3600376C27 /* ai_main.c */,
 				0EA62C212F7CF52500376C27 /* main.c */,
+				0EA62C332F7D2F8600376C27 /* ai_tcp.c */,
+				0EA62C352F7D2F9000376C27 /* ai_main_new.c */,
+				0EA62C372F7D53F600376C27 /* aes_impl.c */,
+				0EA62C392F7D53FD00376C27 /* aes_simple.c */,
+				0EA62C3B2F7D541200376C27 /* ai_proxy.c */,
+				0EA62C3D2F7D542200376C27 /* mini_aes.c */,
+				0EA62C3F2F7D542A00376C27 /* mini_tls.h */,
+				0EA62C402F7D542F00376C27 /* sha256_impl.c */,
+				0EA62C422F7D543700376C27 /* simple_tls.c */,
+				0EA62C442F7D543C00376C27 /* tls_prf.c */,
 			);
 			path = binary;
 			sourceTree = "<group>";
@@ -119,7 +166,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA62C412F7D542F00376C27 /* sha256_impl.c in Sources */,
+				0EA62C3E2F7D542200376C27 /* mini_aes.c in Sources */,
+				0EA62C452F7D543C00376C27 /* tls_prf.c in Sources */,
+				0EA62C2D2F7CFA0200376C27 /* ai_interface.c in Sources */,
+				0EA62C362F7D2F9000376C27 /* ai_main_new.c in Sources */,
+				0EA62C432F7D543700376C27 /* simple_tls.c in Sources */,
+				0EA62C3A2F7D53FD00376C27 /* aes_simple.c in Sources */,
+				0EA62C342F7D2F8600376C27 /* ai_tcp.c in Sources */,
+				0EA62C3C2F7D541200376C27 /* ai_proxy.c in Sources */,
+				0EA62C2A2F7CF72B00376C27 /* hex_editor.c in Sources */,
+				0EA62C302F7D04BD00376C27 /* ai_integration.c in Sources */,
+				0EA62C382F7D53F600376C27 /* aes_impl.c in Sources */,
 				0EA62C222F7CF52500376C27 /* main.c in Sources */,
+				0EA62C322F7D0D3600376C27 /* ai_main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

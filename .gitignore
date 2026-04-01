@@ -1,0 +1,41 @@
+# 编译输出
+obj/
+bin_editor
+ai_bin_editor
+*.o
+*.out
+*.exe
+
+# 用户配置
+.ai_binary_config
+*.config
+
+# 临时文件
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# 测试文件
+test_*
+debug_*
+*.test
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE文件
+.vscode/
+.idea/
+*.code-workspace
+
+# 备份文件
+*.bak
+*.backup
+
+# 文档生成
+docs/_build/
+docs/_site/
