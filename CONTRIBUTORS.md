@@ -60,7 +60,7 @@
 
 <!--
 ### 代码贡献
-![贡献者图表](https://contrib.rocks/image?repo=zihua/ai-binary-editor)
+![贡献者图表](https://contrib.rocks/image?repo=pengzihua2026-anyang/ai-binary-editor)
 
 ### 提交历史
 ![提交历史](https://ghchart.rshah.org/zihua)

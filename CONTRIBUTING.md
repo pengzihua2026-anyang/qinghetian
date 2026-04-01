@@ -293,9 +293,9 @@ A: 我们会在3个工作日内进行初步审查。
 
 ## 📞 联系方式
 
-- 项目维护者: 子华 (zihua@example.com)
-- GitHub Issues: [问题反馈](https://github.com/zihua/ai-binary-editor/issues)
-- 讨论区: [GitHub Discussions](https://github.com/zihua/ai-binary-editor/discussions)
+- 项目维护者: 子华 (pengzihua2026@163.com)
+- GitHub Issues: [问题反馈](https://github.com/pengzihua2026-anyang/ai-binary-editor/issues)
+- 讨论区: [GitHub Discussions](https://github.com/pengzihua2026-anyang/ai-binary-editor/discussions)
 
 ---
 

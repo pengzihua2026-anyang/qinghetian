@@ -222,13 +222,13 @@ AI: 已在文件末尾添加签名"Created by AI"...
 
 ## 🌟 星标历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=zihua/ai-binary-editor&type=Date)](https://star-history.com/#zihua/ai-binary-editor&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=pengzihua2026-anyang/ai-binary-editor&type=Date)](https://star-history.com/#pengzihua2026-anyang/ai-binary-editor&Date)
 
 ## 📞 联系我们
 
-- GitHub Issues: [问题反馈](https://github.com/zihua/ai-binary-editor/issues)
-- 电子邮件: zihua@example.com
-- 项目主页: https://github.com/zihua/ai-binary-editor
+- GitHub Issues: [问题反馈](https://github.com/pengzihua2026-anyang/ai-binary-editor/issues)
+- 电子邮件: pengzihua2026@163.com
+- 项目主页: https://github.com/pengzihua2026-anyang/ai-binary-editor
 
 ---
 
