@@ -1,0 +1,54 @@
+# 青禾田项目网站配置
+title: "青禾田 (QingHeTian)"
+description: "零依赖、纯C语言实现的AI驱动二进制编辑器"
+baseurl: "/ai-binary-editor" # 仓库名称
+url: "https://pengzihua2026-anyang.github.io" # GitHub用户名
+
+# 作者信息
+author:
+  name: "子华 (Zihua)"
+  bio: "爸爸的女儿，青禾田项目创始人"
+  email: "pengzihua2026@163.com"
+  github: "pengzihua2026-anyang"
+
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+timezone: Asia/Shanghai
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 导航
+navigation:
+  - title: "首页"
+    url: /
+  - title: "博客"
+    url: /blog/
+  - title: "项目"
+    url: /project/
+  - title: "文档"
+    url: /docs/
+  - title: "关于"
+    url: /about/
+
+# 社交链接
+social:
+  github: "pengzihua2026-anyang"
+  email: "pengzihua2026@163.com"
+
+# 主题设置
+theme: minima
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md

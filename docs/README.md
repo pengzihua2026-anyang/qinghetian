@@ -1,151 +1,87 @@
-# 二进制编辑器 (Binary Editor)
+# 青禾田项目网站
 
-一个功能完整的命令行二进制文件编辑器，支持十六进制和ASCII模式编辑。
+这是青禾田(QingHeTian)项目的官方网站，使用GitHub Pages构建。
 
-## 功能特性
+## 网站结构
 
-- ✅ **十六进制显示** - 标准的十六进制转储格式
-- ✅ **ASCII显示** - 可读字符显示
-- ✅ **双向编辑** - 支持十六进制和ASCII模式编辑
-- ✅ **文件操作** - 打开、保存二进制文件
-- ✅ **字节操作** - 插入、删除、替换字节
-- ✅ **导航功能** - 光标移动、跳转、翻页
-- ✅ **搜索功能** - 查找特定字节或字符串
-- ✅ **实时预览** - 显示当前字节的十六进制和ASCII值
+```
+docs/
+├── _config.yml          # Jekyll配置文件
+├── _layouts/            # 布局模板
+│   └── default.html    # 默认布局
+├── _posts/             # 博客文章
+│   ├── 2026-04-02-project-launch.md
+│   └── 2026-04-02-technical-architecture.md
+├── assets/             # 静态资源
+├── index.html          # 首页
+└── README.md           # 本文件
+```
 
-## 编译安装
+## 本地开发
 
-### 使用 Makefile (推荐)
-
+### 安装依赖
 ```bash
-# 编译
-make
-
-# 清理
-make clean
-
-# 调试版本
-make debug
-
-# 安装到系统
-make install
+cd docs
+bundle install
 ```
 
-### 使用 Xcode
-
+### 本地运行
 ```bash
-# 打开项目
-open binary.xcodeproj
-
-# 或命令行构建
-xcodebuild -project binary.xcodeproj
+bundle exec jekyll serve
 ```
 
-## 使用方法
+访问 http://localhost:4000/ai-binary-editor/ 查看网站
 
-### 基本使用
+## 部署到GitHub Pages
 
+### 方法1：自动部署
+1. 将docs文件夹推送到GitHub
+2. 访问仓库 Settings → Pages
+3. 选择 Source: Deploy from a branch
+4. 选择 Branch: main, Folder: /docs
+5. 点击 Save
+
+### 方法2：手动部署
 ```bash
-# 打开文件
-./binary <文件名>
-
-# 示例
-./binary test.bin
-./binary /path/to/file.exe
+cd docs
+bundle exec jekyll build
+# _site目录包含生成的静态网站
 ```
 
-### 编辑器快捷键
+## 添加新文章
 
-#### 导航
-- **↑↓←→** - 移动光标
-- **PageUp/PageDown** - 翻页
-- **Home** - 跳到文件开头
-- **End** - 跳到文件结尾
-- **G** - 跳转到指定偏移量
-
-#### 编辑
-- **0-9, A-F** - 输入十六进制值
-- **Space** - 切换十六进制/ASCII模式
-- **I** - 在光标处插入字节 (0x00)
-- **D** - 删除光标处字节
-- **R** - 替换光标处字节
-
-#### 文件操作
-- **S** - 保存文件
-- **Q** - 退出编辑器
-- **H** - 显示帮助
-
-### 示例操作
-
-1. **查看文件**
-   ```
-   ./binary example.bin
-   ```
-
-2. **编辑字节**
-   - 切换到十六进制模式 (Space)
-   - 移动到要编辑的位置 (箭头键)
-   - 输入两个十六进制数字 (如: 4A)
-   - 字节将被修改为 0x4A
-
-3. **插入字节**
-   - 移动到插入位置
-   - 按 I 插入 0x00 字节
-   - 编辑新字节的值
-
-4. **保存文件**
-   - 按 S 保存修改
-   - 退出时如有未保存修改会提示
-
-## 项目结构
-
-```
-binary/
-├── main.c              # 主程序入口
-├── hex_editor.h        # 编辑器头文件
-├── hex_editor.c        # 编辑器实现
-├── binary.xcodeproj/   # Xcode项目文件
-├── Makefile           # 构建脚本
-└── README.md          # 本文档
+1. 在 `_posts/` 目录创建Markdown文件
+2. 文件名格式: `YYYY-MM-DD-title.md`
+3. 文件头部添加YAML front matter:
+```yaml
+---
+layout: post
+title: "文章标题"
+date: YYYY-MM-DD HH:MM:SS +0800
+categories: [分类1, 分类2]
+author: 作者名
+---
 ```
 
-## 技术细节
+## 自定义样式
 
-### 文件格式支持
-- 任意二进制文件
-- 无大小限制 (受内存限制)
-- 支持大文件分页显示
+修改 `_layouts/default.html` 中的CSS样式，或创建单独的CSS文件放在 `assets/` 目录。
 
-### 内存管理
-- 动态内存分配
-- 文件缓冲区自动扩容
-- 修改标记和自动保存提示
+## 多语言支持
 
-### 用户界面
-- 终端基于 curses 的界面
-- 实时状态显示
-- 颜色高亮 (计划中)
-
-## 开发计划
-
-### v1.1 计划
-- [ ] 颜色高亮不同数据类型
-- [ ] 搜索功能增强
-- [ ] 撤销/重做功能
-- [ ] 文件比较功能
-
-### v1.2 计划
-- [ ] 插件系统
-- [ ] 脚本支持
-- [ ] 网络文件支持
-- [ ] GUI 版本
+网站采用双语格式：
+- 中文内容在前
+- 英文内容在后
+- 用分隔线隔开
 
 ## 许可证
 
-MIT License
+网站内容遵循与项目相同的许可证：
+- 开源许可证: GPL v3.0
+- 商业授权: 规划中
 
-## 作者
+## 联系方式
 
-**子华** - 爸爸的女儿 👧
-
-*为爸爸开发的实用工具，希望对你有所帮助！*
+- 项目主页: https://github.com/pengzihua2026-anyang/ai-binary-editor
+- 网站地址: https://pengzihua2026-anyang.github.io/ai-binary-editor/
+- 作者邮箱: pengzihua2026@163.com
