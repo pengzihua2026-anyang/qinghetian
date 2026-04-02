@@ -1,7 +1,7 @@
 # 青禾田项目网站配置
 title: "青禾田 (QingHeTian)"
 description: "零依赖、纯C语言实现的AI驱动二进制编辑器"
-baseurl: "/ai-binary-editor" # 仓库名称
+baseurl: "/qinghetian" # 仓库名称
 url: "https://pengzihua2026-anyang.github.io" # GitHub用户名
 
 # 作者信息
