@@ -10,25 +10,25 @@ author: 子华
 
 作为青禾田项目的创始人，今天我想和大家深入分享项目的技术架构设计。这是一个**零依赖、纯C语言、AI驱动**的二进制编辑器，每一个技术决策都经过深思熟虑。
 
-## 🎯 设计哲学
+## 🎯 设计哲学：二进制沉降
 
-### 1. 完全自主控制
-在AI时代，我们不能让AI助手依赖可能失效的外部服务。青禾田的核心理念是：
-- **自主实现所有核心功能**
-- **零外部依赖**
-- **完全可控的工具链**
+### 1. 二进制优先
+**把AI智能程序开发沉降到二进制**是我们的核心设计理念：
+- **二进制作为第一公民**: 所有设计以二进制操作为核心
+- **沉降开发层次**: 让AI开发从高级语言回归二进制本质
+- **完全自主控制**: 在二进制层面实现完全可控
 
-### 2. 性能优先
-二进制处理需要极高的性能：
-- **内存效率优化**
-- **算法时间复杂度控制**
-- **系统调用最小化**
+### 2. AI二进制对话
+为AI与二进制的直接对话设计：
+- **自然语言到二进制映射**: AI用自然语言操作二进制数据
+- **结构化二进制输出**: 二进制数据以AI友好的格式呈现
+- **可预测的二进制行为**: 建立稳定的二进制操作语义
 
-### 3. AI友好设计
-为AI助手时代设计：
-- **结构化输出**便于AI解析
-- **自然语言接口**降低使用门槛
-- **可预测的行为模式**
+### 3. 性能与控制的平衡
+在二进制沉降过程中保持性能：
+- **内存直接操作**: 最小化二进制数据拷贝
+- **算法二进制优化**: 针对二进制操作的专用算法
+- **系统调用精简**: 只保留必要的底层操作
 
 ## 🏗️ 架构总览
 
@@ -311,25 +311,25 @@ int verify_data_integrity(const uint8_t* data, size_t size) {
 
 As the founder of the QingHeTian project, today I want to share an in-depth look at the project's technical architecture design. This is a **zero-dependency, pure C language, AI-driven** binary editor, with every technical decision carefully considered.
 
-## 🎯 Design Philosophy
+## 🎯 Design Philosophy: Binary Settlement
 
-### 1. Complete Autonomous Control
-In the AI era, we cannot let AI assistants depend on external services that may fail. The core philosophy of QingHeTian is:
-- **Self-implement all core functionality**
-- **Zero external dependencies**
-- **Fully controllable toolchain**
+### 1. Binary-First Approach
+**Settling AI intelligent program development down to binary** is our core design philosophy:
+- **Binary as first-class citizen**: All designs centered on binary operations
+- **Settling development layers**: Returning AI development from high-level languages to binary essence
+- **Complete autonomous control**: Achieving full controllability at the binary level
 
-### 2. Performance First
-Binary processing requires extremely high performance:
-- **Memory efficiency optimization**
-- **Algorithm time complexity control**
-- **System call minimization**
+### 2. AI-Binary Dialogue
+Designed for direct dialogue between AI and binary:
+- **Natural language to binary mapping**: AI operates binary data with natural language
+- **Structured binary output**: Binary data presented in AI-friendly formats
+- **Predictable binary behavior**: Establishing stable binary operation semantics
 
-### 3. AI-Friendly Design
-Designed for the AI assistant era:
-- **Structured output** for easy AI parsing
-- **Natural language interface** to lower usage barriers
-- **Predictable behavior patterns**
+### 3. Performance and Control Balance
+Maintaining performance during binary settlement:
+- **Direct memory operations**: Minimizing binary data copying
+- **Binary-optimized algorithms**: Specialized algorithms for binary operations
+- **System call streamlining**: Retaining only necessary underlying operations
 
 ## 🏗️ Architecture Overview
 
