@@ -1,17 +1,17 @@
-# 🤖 AI二进制编辑器
+# 🌾 青禾田 (QingHeTian)
 
 > **零依赖、纯C语言实现的AI驱动二进制编辑器**  
 > 为AI助手时代设计的完全自主二进制处理工具
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![纯C语言](https://img.shields.io/badge/语言-纯C语言-blue)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![零依赖](https://img.shields.io/badge/依赖-零依赖-green)](https://en.wikipedia.org/wiki/Dependency_hell)
 [![AI专用](https://img.shields.io/badge/设计-AI专用-purple)](https://en.wikipedia.org/wiki/Artificial_intelligence)
 
 ## 🎯 项目愿景
 
-在AI时代，我们需要为AI助手打造**完全自主、零依赖、高性能**的底层工具。  
-AI二进制编辑器正是为此而生——一个用纯C语言实现，不依赖任何外部库，专为AI优化的二进制处理工具。
+青禾田项目致力于为AI时代打造**完全自主、零依赖、高性能**的底层二进制处理工具。  
+我们相信在AI助手普及的时代，需要为AI提供**完全可控、无外部依赖**的核心工具链。
 
 ## ✨ 核心特性
 
@@ -201,9 +201,30 @@ AI: 已在文件末尾添加签名"Created by AI"...
 - 函数前添加详细注释
 - 完善的错误处理
 
-## 📄 许可证
+## 📄 许可证与授权
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件。
+### 🆓 个人使用 - 完全免费
+青禾田对**个人开发者、学生、开源项目完全免费**：
+- 下载即用，无需付费
+- 完整功能，无任何限制
+- 遵循 GPL v3.0 开源协议
+
+### ⏳ 商业授权 - 规划中
+以下商业选项正在规划阶段：
+
+| 授权类型 | 状态 | 目标用户 |
+|----------|------|----------|
+| 团队许可证 | 规划中 | 中小企业协作 |
+| 企业许可证 | 规划中 | 大型机构部署 |
+| 设备授权 | 规划中 | 硬件厂商预装 |
+
+### 🛠️ 专业服务 - 规划中
+- **硬件适配**: 规划中 (定制驱动、性能优化)
+- **定制开发**: 规划中 (功能扩展、系统集成)  
+- **高级支持**: 规划中 (优先技术支持)
+
+**详细规划**: 参见 [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md)  
+**商业咨询**: pengzihua2026@163.com
 
 ## 👥 作者
 

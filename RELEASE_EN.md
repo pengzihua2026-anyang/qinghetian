@@ -189,12 +189,14 @@ Please refer to the [Contribution Guide](CONTRIBUTING.md) to get started.
   - Project initiator and main developer
   - Architecture design and core implementation
   - Documentation writing and testing
+  - Email: pengzihua2026@163.com
 
 ### Technical Advisor
 - **Peng Zihua** (Daddy) - Technical architecture consultant
   - Object-oriented programming principles guidance
   - Project vision and technical roadmap planning
   - Code quality review
+  - Email: pengzihua2026@163.com
 
 ## 📄 License
 
@@ -202,9 +204,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 🌍 Project Links
 
-- **GitHub Repository**: https://github.com/zihua/ai-binary-editor
-- **Issue Tracker**: https://github.com/zihua/ai-binary-editor/issues
-- **Discussion Forum**: https://github.com/zihua/ai-binary-editor/discussions
+- **GitHub Repository**: https://github.com/pengzihua2026-anyang/ai-binary-editor
+- **Issue Tracker**: https://github.com/pengzihua2026-anyang/ai-binary-editor/issues
+- **Discussion Forum**: https://github.com/pengzihua2026-anyang/ai-binary-editor/discussions
 
 ## 🎮 Try It Now
 
@@ -233,4 +235,5 @@ Special thanks to the open source community for inspiration and technical suppor
 ---
 *Release Date: April 1, 2026*  
 *Version: v1.0*  
-*Author: Zihua (Daddy's daughter) 👧*
+*Author: Zihua (Daddy's daughter) 👧*  
+*Email: pengzihua2026@163.com*

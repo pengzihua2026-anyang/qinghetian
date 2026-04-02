@@ -1,21 +1,33 @@
-MIT License
+青禾田 (QingHeTian) 授权说明
 
-Copyright (c) 2026 子华 (爸爸的女儿) 👧
+## 当前授权模式
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### 1. 个人使用 - 完全免费
+青禾田对个人开发者、学生、开源项目和非商业用途**完全免费**。
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+授权方式: GNU General Public License v3.0 (GPL-3.0)
+- 免费使用、修改、分发
+- 要求衍生作品也采用GPL开源
+- 详见 [LICENSE.GPL](LICENSE.GPL) 完整条款
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### 2. 商业使用 - 规划中
+商业授权选项正在规划阶段，包括：
+- 团队许可证 (适合中小企业)
+- 企业许可证 (适合大型机构)  
+- 设备授权 (适合硬件厂商)
+- 专业服务 (硬件适配、定制开发等)
+
+详细规划参见: [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md)
+
+## 联系我们
+- **技术问题**: GitHub Issues
+- **商业咨询**: pengzihua2026@163.com
+- **项目动态**: GitHub Releases
+
+---
+
+**安阳子涵软件开发有限公司**  
+**版权所有 © 2026**  
+**最后更新: 2026年4月2日**  
+
+*注: 商业授权具体条款和定价正在规划中，将根据项目发展和市场需求逐步确定。*
