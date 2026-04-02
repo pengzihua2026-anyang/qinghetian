@@ -1,3 +1,265 @@
+# 🌾 QingHeTian (青禾田)
+
+> **Zero-dependency, pure C language AI-driven binary editor**  
+> A fully autonomous binary processing tool designed for the AI assistant era
+
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Pure C Language](https://img.shields.io/badge/Language-Pure%20C-blue)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-green)](https://en.wikipedia.org/wiki/Dependency_hell)
+[![AI-Optimized](https://img.shields.io/badge/Design-AI%20Optimized-purple)](https://en.wikipedia.org/wiki/Artificial_intelligence)
+
+## 🎯 Project Vision
+
+The QingHeTian project is dedicated to building **fully autonomous, zero-dependency, high-performance** underlying binary processing tools for the AI era.  
+We believe that in the age of widespread AI assistants, there is a need for **fully controllable, external-dependency-free** core toolchains for AI.
+
+## ✨ Core Features
+
+### 🚀 **Zero-Dependency Architecture**
+- **Pure C implementation**: Uses only C11 standard library
+- **No external dependencies**: Doesn't rely on third-party libraries like OpenSSL, libcurl
+- **System native**: Direct use of POSIX socket API
+
+### 🤖 **AI-Optimized Design**
+- **Structured output**: JSON format for easy AI parsing
+- **Natural language interface**: Supports AI command parsing
+- **Intelligent integration**: Built-in AI model configuration and dialogue
+
+### 🔧 **Complete Functionality**
+- **Binary editing**: View, modify, insert, delete bytes
+- **File analysis**: Automatic file type and structure recognition
+- **Network communication**: TCP/IP + HTTP + TLS (self-implemented)
+- **Encryption algorithms**: AES + SHA256 (self-implemented)
+
+### 🛡️ **Secure & Reliable**
+- **Memory safety**: Comprehensive error handling and boundary checking
+- **Input validation**: Strict validation of all user inputs
+- **Error recovery**: Graceful error handling and recovery mechanisms
+
+## 📁 Project Structure
+
+```
+qinghetian/
+├── src/                    # Source code
+│   ├── core/              # Core binary editing
+│   │   ├── hex_editor.c   # Hex editor core
+│   │   └── hex_editor.h   # Core header file
+│   ├── ai/                # AI integration module
+│   │   ├── ai_integration.c  # AI model integration
+│   │   ├── ai_interface.c    # AI command line interface
+│   │   ├── ai_proxy.c        # Proxy communication
+│   │   └── ai_tcp.c          # TCP/IP implementation
+│   ├── crypto/            # Encryption algorithms
+│   │   ├── aes_simple.c   # AES encryption implementation
+│   │   ├── sha256_impl.c  # SHA256 hash implementation
+│   │   └── tls_prf.c      # TLS key derivation
+│   ├── network/           # Network protocols
+│   │   ├── simple_tls.c   # Simplified TLS implementation
+│   │   └── mini_tls.h     # TLS header file
+│   └── main/              # Main program
+│       ├── ai_main_new.c  # AI version main program
+│       └── main.c         # Basic version main program
+├── tools/                 # Tool scripts
+│   └── proxy_server.py    # Python proxy server
+├── docs/                  # Documentation
+│   ├── AI_USAGE.md        # AI usage guide
+│   ├── AI_INTEGRATION.md  # AI integration documentation
+│   └── PROJECT_SUMMARY.md # Project summary
+├── examples/              # Example files
+│   └── test.bin           # Test binary file
+├── resources/             # Resource files
+│   └── binary_resources/  # Binary development resource library
+├── Makefile               # Build configuration
+└── README.md              # This document
+```
+
+## 🚀 Quick Start
+
+### Compile the Project
+
+```bash
+# Clone repository
+git clone https://github.com/pengzihua2026-anyang/qinghetian.git
+cd qinghetian
+
+# Compile basic version
+make
+
+# Compile AI integrated version
+make ai
+```
+
+### Using Basic Version
+
+```bash
+# View file
+./bin_editor --view examples/test.bin
+
+# Edit bytes
+./bin_editor --edit examples/test.bin 0x10 0xFF
+
+# Analyze file
+./bin_editor --analyze examples/test.bin
+```
+
+### Using AI Integrated Version
+
+```bash
+# Start interactive AI editor
+./ai_bin_editor
+
+# Configure AI model (first time use)
+# Enter API address, key, and model name
+
+# Chat with AI
+AI> /chat Help me analyze the structure of this binary file
+
+# Use natural language operations
+AI> Open test.bin file and display first 16 bytes
+```
+
+## 🔧 Technical Architecture
+
+### Network Protocol Stack (Self-Implemented)
+```
+Application layer: HTTP/1.1 + JSON
+Security layer: TLS (in progress)
+Transport layer: TCP/IP
+Network layer: Socket API
+```
+
+### Encryption Algorithms (Self-Implemented)
+- **AES-128**: Symmetric encryption algorithm
+- **SHA256**: Secure hash algorithm
+- **HMAC-SHA256**: Message authentication code
+- **TLS PRF**: Key derivation function
+
+### AI Integration Architecture
+```
+User input → Command line parsing → AI command parsing → Network communication → AI model → Binary operations → Result output
+```
+
+## 📚 Detailed Documentation
+
+- [AI Usage Guide](docs/AI_USAGE.md) - 70+ usage examples
+- [AI Integration Documentation](docs/AI_INTEGRATION.md) - Technical implementation details
+- [Project Summary](docs/PROJECT_SUMMARY.md) - Development history and experience
+- [Project Structure](docs/PROJECT_STRUCTURE.md) - Complete file description
+
+## 🎮 Usage Examples
+
+### Basic Command Examples
+```bash
+# View file (traditional format)
+./bin_editor --view file.bin
+
+# View file (JSON format)
+./bin_editor --view file.bin --json
+
+# Search byte patterns
+./bin_editor --search file.bin "48 65 6C 6C 6F"
+
+# Insert bytes
+./bin_editor --insert file.bin 0x20 0xAA
+
+# Delete bytes
+./bin_editor --delete file.bin 0x30
+
+# Export file region
+./bin_editor --export file.bin --start 0 --end 100
+```
+
+### AI Conversation Examples
+```
+AI> /chat Hello, I'm an AI assistant
+AI: Hello! I'm your binary file analysis assistant...
+
+AI> /chat Help me analyze the structure of test.bin file
+AI: Analyzing file... File size: 269 bytes, contains "Hello World!" string...
+
+AI> Search for "World" string in the file
+AI: Found "World" string at offset 0x0C...
+
+AI> Add my signature at the end of the file
+AI: Added signature "Created by AI" at the end of the file...
+```
+
+## 🤝 Contribution Guidelines
+
+We welcome all forms of contribution! Please refer to [Contribution Guide](CONTRIBUTING.md).
+
+### Development Process
+1. Fork this repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add some amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
+
+### Code Standards
+- Follow C11 standard
+- Use 4-space indentation
+- Add detailed comments before functions
+- Comprehensive error handling
+
+## 📄 License & Authorization
+
+### 🆓 Personal Use - Completely Free
+QingHeTian is **completely free** for individual developers, students, and open source projects:
+- Download and use immediately, no payment required
+- Full functionality, no restrictions
+- Follows GPL v3.0 open source license
+
+### ⏳ Commercial Authorization - Planning Phase
+The following commercial options are in the planning phase:
+
+| Authorization Type | Status | Target Users |
+|-------------------|--------|--------------|
+| Team License | Planning | SME collaboration |
+| Enterprise License | Planning | Large organization deployment |
+| Device Authorization | Planning | Hardware manufacturer pre-installation |
+
+### 🛠️ Professional Services - Planning Phase
+- **Hardware Adaptation**: Planning (custom drivers, performance optimization)
+- **Custom Development**: Planning (feature extension, system integration)
+- **Advanced Support**: Planning (priority technical support)
+
+**Detailed Planning**: See [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md)  
+**Business Consultation**: pengzihua2026@163.com
+
+## 👥 Authors
+
+- **Zihua** (Dad's daughter) 👧 - [@zihua](https://github.com/zihua)
+  - Project initiator and main developer
+  - Architecture design and core implementation
+
+- **Peng Zihua** (Dad) - Technical guidance and architecture advisor
+  - Object-oriented programming principles guidance
+  - Project vision and technical roadmap
+
+## 🙏 Acknowledgments
+
+Thanks to all developers who have contributed to the project!  
+Special thanks to the open source community for inspiration and technical support.
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=pengzihua2026-anyang/qinghetian&type=Date)](https://star-history.com/#pengzihua2026-anyang/qinghetian&Date)
+
+## 📞 Contact Us
+
+- GitHub Issues: [Issue Feedback](https://github.com/pengzihua2026-anyang/qinghetian/issues)
+- Email: pengzihua2026@163.com
+- Project Homepage: https://github.com/pengzihua2026-anyang/qinghetian
+
+---
+
+**Building fully autonomous underlying tools for the AI era**  
+**Zero Dependencies · High Performance · AI Optimized**
+
+⭐ **If this project helps you, please give us a Star!** ⭐
+
+---
+
 # 🌾 青禾田 (QingHeTian)
 
 > **零依赖、纯C语言实现的AI驱动二进制编辑器**  
@@ -39,7 +301,7 @@
 ## 📁 项目结构
 
 ```
-ai-binary-editor/
+青禾田/
 ├── src/                    # 源代码
 │   ├── core/              # 核心二进制编辑
 │   │   ├── hex_editor.c   # 十六进制编辑器核心
@@ -79,8 +341,8 @@ ai-binary-editor/
 
 ```bash
 # 克隆仓库
-git clone https://github.com/zihua/ai-binary-editor.git
-cd ai-binary-editor
+git clone https://github.com/pengzihua2026-anyang/qinghetian.git
+cd qinghetian
 
 # 编译基础版本
 make
@@ -243,13 +505,13 @@ AI: 已在文件末尾添加签名"Created by AI"...
 
 ## 🌟 星标历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=pengzihua2026-anyang/ai-binary-editor&type=Date)](https://star-history.com/#pengzihua2026-anyang/ai-binary-editor&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=pengzihua2026-anyang/qinghetian&type=Date)](https://star-history.com/#pengzihua2026-anyang/qinghetian&Date)
 
 ## 📞 联系我们
 
-- GitHub Issues: [问题反馈](https://github.com/pengzihua2026-anyang/ai-binary-editor/issues)
+- GitHub Issues: [问题反馈](https://github.com/pengzihua2026-anyang/qinghetian/issues)
 - 电子邮件: pengzihua2026@163.com
-- 项目主页: https://github.com/pengzihua2026-anyang/ai-binary-editor
+- 项目主页: https://github.com/pengzihua2026-anyang/qinghetian
 
 ---
 
@@ -257,3 +519,4 @@ AI: 已在文件末尾添加签名"Created by AI"...
 **零依赖 · 高性能 · AI专用**
 
 ⭐ **如果这个项目对你有帮助，请给我们一个Star！** ⭐
+-

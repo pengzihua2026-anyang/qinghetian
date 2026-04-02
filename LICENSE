@@ -1,4 +1,40 @@
-青禾田 (QingHeTian) 授权说明
+# QingHeTian (青禾田) Authorization Description
+
+## Current Authorization Model
+
+### 1. Personal Use - Completely Free
+QingHeTian is **completely free** for individual developers, students, open source projects, and non-commercial use.
+
+Authorization method: GNU General Public License v3.0 (GPL-3.0)
+- Free to use, modify, distribute
+- Requires derivative works to also use GPL open source
+- See [LICENSE.GPL](LICENSE.GPL) for complete terms
+
+### 2. Commercial Use - Planning Phase
+Commercial authorization options are in the planning phase, including:
+- Team License (suitable for SMEs)
+- Enterprise License (suitable for large organizations)
+- Device Authorization (suitable for hardware manufacturers)
+- Professional Services (hardware adaptation, custom development, etc.)
+
+Detailed planning: See [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md)
+
+## Contact Us
+- **Technical Issues**: GitHub Issues
+- **Business Consultation**: pengzihua2026@163.com
+- **Project Updates**: GitHub Releases
+
+---
+
+**Anyang Zihan Software Development Co., Ltd.**  
+**Copyright © 2026**  
+**Last Updated: April 2, 2026**
+
+*Note: Specific terms and pricing for commercial authorization are in the planning phase and will be gradually determined based on project development and market demand.*
+
+---
+
+# 青禾田 (QingHeTian) 授权说明
 
 ## 当前授权模式
 

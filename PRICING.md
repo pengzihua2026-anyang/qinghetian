@@ -1,3 +1,94 @@
+# QingHeTian Pricing Framework
+
+## Current Pricing Strategy
+
+### 🆓 Personal Use - Completely Free
+- **Target Users**: Individual developers, students, open source projects
+- **License**: GPL v3.0 Open Source License
+- **Includes**: Full functionality, community support
+- **Requirements**: Derivative works must follow GPL open source
+
+### ⏳ Commercial Authorization - Planning Phase
+The following commercial options are in the planning phase. Specific pricing and service content will be determined based on market demand:
+
+#### 1. Team License
+- **Status**: Planning
+- **Target Users**: Small and medium enterprises, startup teams
+- **Considerations**: Team size, collaboration needs, support level
+
+#### 2. Enterprise License
+- **Status**: Planning
+- **Target Users**: Large enterprises, government agencies
+- **Considerations**: Deployment scale, security requirements, customization needs
+
+#### 3. Device Authorization
+- **Single Device Authorization**: Under consideration ($99/device as reference)
+- **OEM Bulk Authorization**: Under consideration ($0.5-5/device tiered pricing reference)
+- **Target Users**: Hardware manufacturers, device makers
+
+### 🛠️ Professional Services - Planning Phase
+#### 1. Hardware Adaptation Service
+- **Status**: Planning
+- **Service Content**: Custom drivers, performance optimization, compatibility testing
+- **Pricing Method**: Project evaluation (reference: starting from $5,000)
+
+#### 2. Custom Development Service
+- **Status**: Planning
+- **Service Content**: Feature extension, system integration, interface customization
+- **Pricing Method**: Hourly or project-based (reference: $200/hour)
+
+#### 3. Advanced Support Service
+- **Status**: Planning
+- **Service Content**: Priority technical support, emergency response
+- **Pricing Method**: Hourly or annual contract (reference: $199/hour)
+
+## Pricing Principles
+
+### 1. Individual First
+- Individual users always free
+- Encourage learning and non-commercial use
+- Build user base and community
+
+### 2. Commercial Reasonableness
+- Commercial pricing reflects actual value
+- Matches enterprise scale and needs
+- Provides flexible options
+
+### 3. Service Value-Added
+- Software authorization separated from professional services
+- Provides customized solutions as needed
+- Establishes long-term cooperative relationships
+
+## Future Planning Directions
+
+### Short Term (within 6 months)
+1. Collect user feedback and needs
+2. Determine first batch of paid features
+3. Establish basic support system
+
+### Medium Term (6-12 months)
+1. Launch team version pilot program
+2. Determine enterprise version feature scope
+3. Establish partner network
+
+### Long Term (12+ months)
+1. Improve product matrix
+2. Build ecosystem
+3. Explore new business models
+
+## Contact Information
+- **Technical Consultation**: GitHub Issues
+- **Business Cooperation**: pengzihua2026@163.com
+- **Community Communication**: To be established
+
+---
+
+**Last Updated**: April 2, 2026  
+**Version**: 2.0  
+**Note**: Current personal version is completely free, commercial options are being planned and determined.
+
+---
+
 # 青禾田定价框架
 
 ## 当前定价策略
