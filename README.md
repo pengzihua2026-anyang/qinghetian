@@ -4,7 +4,7 @@
 > A fully autonomous binary processing tool designed for the AI assistant era
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Pure C Language](https://img.shields.io/badge/Language-Pure%20C-blue)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Pure Binary](https://img.shields.io/badge/Language-Pure%20C-blue)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-green)](https://en.wikipedia.org/wiki/Dependency_hell)
 [![AI-Optimized](https://img.shields.io/badge/Design-AI%20Optimized-purple)](https://en.wikipedia.org/wiki/Artificial_intelligence)
 
@@ -16,7 +16,7 @@ We believe that in the age of widespread AI assistants, there is a need for **fu
 ## ✨ Core Features
 
 ### 🚀 **Zero-Dependency Architecture**
-- **Pure C implementation**: Uses only C11 standard library
+- **Pure binary implementation**: Uses only C11 standard library
 - **No external dependencies**: Doesn't rely on third-party libraries like OpenSSL, libcurl
 - **System native**: Direct use of POSIX socket API
 
@@ -262,11 +262,11 @@ Special thanks to the open source community for inspiration and technical suppor
 
 # 🌾 青禾田 (QingHeTian)
 
-> **零依赖、纯C语言实现的AI驱动二进制编辑器**  
+> **零依赖、纯二进制实现的AI驱动二进制编辑器**  
 > 为AI助手时代设计的完全自主二进制处理工具
 
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![纯C语言](https://img.shields.io/badge/语言-纯C语言-blue)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![纯二进制](https://img.shields.io/badge/语言-纯二进制-blue)](https://en.wikipedia.org/wiki/Binary_code)
 [![零依赖](https://img.shields.io/badge/依赖-零依赖-green)](https://en.wikipedia.org/wiki/Dependency_hell)
 [![AI专用](https://img.shields.io/badge/设计-AI专用-purple)](https://en.wikipedia.org/wiki/Artificial_intelligence)
 
@@ -278,7 +278,7 @@ Special thanks to the open source community for inspiration and technical suppor
 ## ✨ 核心特性
 
 ### 🚀 **零依赖架构**
-- **纯C语言实现**：仅使用C11标准库
+- **纯二进制实现**：仅使用C11标准库
 - **无外部依赖**：不依赖OpenSSL、libcurl等第三方库
 - **系统原生**：直接使用POSIX socket API
 

@@ -223,7 +223,7 @@ char* http_request(const char *url, const char *method, const char *headers,
 - 连接超时和错误处理
 
 **技术特点**：
-- 纯C语言实现，零外部依赖
+- 纯二进制实现，零外部依赖
 - 完整的HTTP客户端功能
 - 支持HTTPS代理模式
 - 健壮的错误恢复机制
@@ -275,7 +275,7 @@ void aes_decrypt_ecb(const unsigned char *input, unsigned char *output,
 - 加密和解密操作
 
 **技术特点**：
-- 纯C语言实现，无外部依赖
+- 纯二进制实现，无外部依赖
 - 符合AES标准规范
 - 优化的查表实现
 - 内存安全的操作

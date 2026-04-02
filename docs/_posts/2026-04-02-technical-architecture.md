@@ -8,7 +8,7 @@ author: 子华
 
 # 🏗️ 青禾田技术架构深度解析
 
-作为青禾田项目的创始人，今天我想和大家深入分享项目的技术架构设计。这是一个**零依赖、纯C语言、AI驱动**的二进制编辑器，每一个技术决策都经过深思熟虑。
+作为青禾田项目的创始人，今天我想和大家深入分享项目的技术架构设计。这是一个**零依赖、纯二进制、AI驱动**的二进制编辑器，每一个技术决策都经过深思熟虑。
 
 ## 🎯 设计哲学：二进制沉降
 
@@ -270,7 +270,7 @@ int verify_data_integrity(const uint8_t* data, size_t size) {
 
 ## 🤔 技术决策思考
 
-### 为什么选择纯C语言？
+### 为什么选择纯二进制？
 1. **性能控制**: 直接内存管理和系统调用
 2. **可移植性**: 几乎所有平台都有C编译器
 3. **零依赖**: 不依赖复杂的运行时环境
@@ -309,7 +309,7 @@ int verify_data_integrity(const uint8_t* data, size_t size) {
 
 # 🏗️ QingHeTian Technical Architecture Deep Dive
 
-As the founder of the QingHeTian project, today I want to share an in-depth look at the project's technical architecture design. This is a **zero-dependency, pure C language, AI-driven** binary editor, with every technical decision carefully considered.
+As the founder of the QingHeTian project, today I want to share an in-depth look at the project's technical architecture design. This is a **zero-dependency, pure binary, AI-driven** binary editor, with every technical decision carefully considered.
 
 ## 🎯 Design Philosophy: Binary Settlement
 
@@ -471,7 +471,7 @@ AI> Search for "Hello World" string in the file
 
 ### 2. Program API
 ```c
-// C language API
+// binary API
 int qht_init(void);
 int qht_open_file(const char* filename, BinaryBuffer** buf);
 int qht_close_file(BinaryBuffer* buf);

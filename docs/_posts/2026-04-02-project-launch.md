@@ -20,13 +20,13 @@ author: 子华
 
 - **沉降开发层次**: 让AI开发回归二进制本质
 - **完全自主控制**: 为AI提供**完全可控、无外部依赖**的二进制工具链
-- **零依赖实现**: 纯C语言实现，从底层重新定义AI开发工具
+- **零依赖实现**: 纯二进制实现，从底层重新定义AI开发工具
 - **二进制优先**: 以二进制为核心，重新思考AI程序开发流程
 
 ## ✨ 核心特性
 
 ### 🚀 零依赖架构
-- **纯C语言实现**：仅使用C11标准库
+- **纯二进制实现**：仅使用C11标准库
 - **无外部依赖**：不依赖OpenSSL、libcurl等第三方库
 - **系统原生**：直接使用POSIX socket API
 
@@ -166,7 +166,7 @@ In the era of widespread AI assistants, we have identified a key issue: AI devel
 
 - **Settling development layers**: Returning AI development to the essence of binary
 - **Complete autonomous control**: Providing AI with **fully controllable, external-dependency-free** binary toolchains
-- **Zero-dependency implementation**: Pure C language implementation, redefining AI development tools from the ground up
+- **Zero-dependency implementation**: Pure binary implementation, redefining AI development tools from the ground up
 - **Binary-first approach**: Reconsidering AI program development processes with binary as the core
 
 ## ✨ Core Features
