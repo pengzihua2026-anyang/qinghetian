@@ -39,3 +39,6 @@ Thumbs.db
 # 文档生成
 docs/_build/
 docs/_site/
+
+# 子华专用工作文件夹 (不提交到GitHub)
+zihua/
