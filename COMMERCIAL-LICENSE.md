@@ -1,3 +1,104 @@
+# QingHeTian Commercial Authorization Framework
+
+## Current Authorization Model
+
+### 🆓 Personal Use - Completely Free
+**QingHeTian is completely free for individual users**, using GPL v3.0 open source license:
+- Individual developers, students, enthusiasts can use for free
+- Open source projects and non-commercial use free
+- Requires derivative works to follow GPL open source agreement
+
+### ⏳ Commercial Authorization - Planning Phase
+The following commercial authorization options are in the planning phase. Specific terms and pricing are to be determined:
+
+#### 1. Team License
+- **Status**: Planning
+- **Target**: SME collaboration use
+- **Considerations**: User count, feature scope, support level
+
+#### 2. Enterprise License
+- **Status**: Planning
+- **Target**: Large enterprise deployment
+- **Considerations**: Security requirements, customization needs, service level
+
+#### 3. Device Authorization
+- **Single Device Authorization**: Planning (reference: $99/device)
+- **OEM Bulk Authorization**: Planning (reference: $0.5-5/device, tiered pricing)
+- **Target**: Hardware pre-installation and bulk deployment
+
+## Professional Service Planning
+
+### 🛠️ Hardware Adaptation Service
+- **Status**: Planning
+- **Scope**: Custom driver development, performance optimization, compatibility testing
+- **Pricing**: Project evaluation (reference range: $5,000 - $50,000)
+
+### 🔧 Custom Development Service
+- **Status**: Planning
+- **Scope**: Feature extension, system integration, interface customization
+- **Pricing**: Hourly or project-based (reference: $200/hour)
+
+### 📞 Advanced Support Service
+- **Status**: Planning
+- **Scope**: Priority technical support, emergency response, dedicated account manager
+- **Pricing**: Hourly or annual contract (reference: $199/hour)
+
+## Authorization Principles
+
+### 1. Open Source First
+- Core code remains open source
+- Personal and non-commercial use free
+- Encourage community contributions and feedback
+
+### 2. Commercial Reasonableness
+- Commercial authorization reflects actual value
+- Pricing matches market demand
+- Provides flexible commercial choices
+
+### 3. Service Value-Added
+- Software authorization separated from professional services
+- Provides customized solutions as needed
+- Establishes sustainable cooperative relationships
+
+## Implementation Timeline
+
+### Phase 1: Community Building (Current)
+- Free personal version release
+- Establish user community
+- Collect needs and feedback
+
+### Phase 2: Commercial Pilot (Next 6 months)
+- Launch commercial version pilot program
+- Cooperate with early customers
+- Determine business model
+
+### Phase 3: Official Release (Next 12 months)
+- Launch official commercial version
+- Establish partner network
+- Improve service system
+
+## Contact Us
+
+### Current Support
+- **Technical Issues**: GitHub Issues
+- **Usage Consultation**: Community forum (to be established)
+- **Feedback Suggestions**: Welcome through any channel
+
+### Business Consultation
+- **Email**: pengzihua2026@163.com
+- **Scope**: Business cooperation, customization needs, bulk authorization
+- **Response**: We will reply to business consultations within 24 hours
+
+---
+
+**Anyang Zihan Software Development Co., Ltd.**  
+**QingHeTian Project Team**  
+**Last Updated: April 2, 2026**
+
+*Note: Commercial authorization terms and pricing are in the planning phase and will be gradually determined based on market feedback and project development.*
+
+---
+
 # 青禾田商业授权框架
 
 ## 当前授权模式
