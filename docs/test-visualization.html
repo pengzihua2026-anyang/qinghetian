@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试 - 青禾田计划可视化</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #ff9800;
+            padding-bottom: 10px;
+        }
+        .visualization-frame {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .instructions {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #4CAF50;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>青禾田计划 - 模商数列可视化测试</h1>
+        
+        <div class="instructions">
+            <h3>🎯 测试说明</h3>
+            <p>这是一个交互式数学可视化页面，展示了模商数列的三维结构。</p>
+            <p><strong>交互方式：</strong></p>
+            <ul>
+                <li>鼠标拖拽：旋转视角</li>
+                <li>鼠标滚轮：缩放</li>
+                <li>调整参数：修改a和b的值</li>
+                <li>点击播放：观看动画</li>
+            </ul>
+        </div>
+        
+        <div class="visualization-frame">
+            <iframe src="visualizations/modular-quotient.html" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h4>🧮 数学公式</h4>
+                <p>aₙ = ((n-1) mod a + 1) / ((n-1) mod b + 1)</p>
+            </div>
+            <div class="feature">
+                <h4>🎨 视觉编码</h4>
+                <p>颜色从蓝（低比值）到红（高比值）</p>
+            </div>
+            <div class="feature">
+                <h4>🔄 交互功能</h4>
+                <p>参数调整、动画播放、视角控制</p>
+            </div>
+            <div class="feature">
+                <h4>📱 响应式设计</h4>
+                <p>适配不同屏幕尺寸</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="blog/index.html" style="background: #ff9800; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: bold;">
+                查看完整博客 →
+            </a>
+        </div>
+    </div>
+</body>
+</html>
