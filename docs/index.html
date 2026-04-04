@@ -1,112 +1,440 @@
----
-layout: default
-title: 首页
----
-
-<div class="hero">
-    <h1>🌾 青禾田 (QingHeTian)</h1>
-    <h2>第一阶段：把AI智能程序开发沉降到二进制</h2>
-    <p>零依赖、纯二进制、AI驱动、完全自主的底层工具链</p>
-    <div class="cta-buttons">
-        <a href="https://github.com/pengzihua2026-anyang/QingHeTian-BinaryEditor" class="btn btn-primary">
-            <i class="fab fa-github"></i> GitHub 仓库
-        </a>
-        <a href="/QingHeTian-BinaryEditor/2026/04/02/project-launch.html" class="btn btn-secondary">
-            <i class="fas fa-rocket"></i> 项目启动
-        </a>
-    </div>
-</div>
-
-<div class="content-section">
-    <h2><i class="fas fa-bullseye"></i> 项目核心定位</h2>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青禾田 (QingHeTian) - 模商数列可视化</title>
     
-    <div class="feature-grid">
-        <div class="feature">
-            <i class="fas fa-layer-group"></i>
-            <h3>二进制沉降</h3>
-            <p>把AI智能程序开发沉降到二进制层面，回归计算机本质</p>
-        </div>
+    <!-- 引入 Three.js 核心库以及扩展 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        <div class="feature">
-            <i class="fas fa-shield-alt"></i>
-            <h3>纯二进制实现</h3>
-            <p>零依赖，从底层重新定义AI开发工具</p>
-        </div>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
         
-        <div class="feature">
-            <i class="fas fa-robot"></i>
-            <h3>AI驱动</h3>
-            <p>为AI助手时代专门优化的自然语言接口</p>
-        </div>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
         
-        <div class="feature">
-            <i class="fas fa-unlock-alt"></i>
-            <h3>完全自主</h3>
-            <p>不依赖任何外部库，完全可控的工具链</p>
-        </div>
-    </div>
-</div>
-
-<div class="content-section">
-    <h2><i class="fas fa-external-link-alt"></i> 快速链接</h2>
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .logo-icon {
+            font-size: 48px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .logo-text h1 {
+            font-size: 36px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            color: #666;
+            font-size: 18px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #667eea;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: rgba(102, 126, 234, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .visualization-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .visualization-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .visualization-header h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        
+        .visualization-header p {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        #visualization {
+            width: 100%;
+            height: 600px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .content-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .feature i {
+            font-size: 40px;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .feature p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .link-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+            background: rgba(102, 126, 234, 0.05);
+        }
+        
+        .link-card i {
+            font-size: 30px;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .link-card span {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .link-card small {
+            color: #666;
+            font-size: 12px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            color: #666;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .social-links a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: rgba(102, 126, 234, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 20px;
+            }
+            
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            #visualization {
+                height: 400px;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .link-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-text h1 {
+                font-size: 28px;
+            }
+            
+            #visualization {
+                height: 300px;
+            }
+            
+            .feature {
+                padding: 15px;
+            }
+        }
+    </style>
     
-    <div class="link-grid">
-        <a href="https://github.com/pengzihua2026-anyang/QingHeTian-BinaryEditor" class="link-card">
-            <i class="fab fa-github"></i>
-            <span>GitHub 仓库</span>
-            <small>查看源代码和贡献</small>
-        </a>
+    <!-- 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>青禾田 (QingHeTian)</h1>
+                    <p>第一阶段：把AI智能程序开发沉降到二进制</p>
+                </div>
+            </div>
+            
+            <nav>
+                <a href="/QingHeTian-BinaryEditor/">首页</a>
+                <a href="/QingHeTian-BinaryEditor/blog/">博客</a>
+                <a href="/QingHeTian-BinaryEditor/docs/">文档</a>
+                <a href="https://github.com/pengzihua2026-anyang/QingHeTian-BinaryEditor" target="_blank">GitHub</a>
+            </nav>
+        </header>
         
-        <a href="/QingHeTian-BinaryEditor/2026/04/03/modular-quotient-visualization.html" class="link-card">
-            <i class="fas fa-chart-line"></i>
-            <span>数学可视化</span>
-            <small>交互式3D数学探索</small>
-        </a>
-        
-        <a href="/QingHeTian-BinaryEditor/blog/" class="link-card">
-            <i class="fas fa-blog"></i>
-            <span>技术博客</span>
-            <small>深度技术思考</small>
-        </a>
-        
-        <a href="mailto:pengzihua2026@163.com" class="link-card">
-            <i class="fas fa-envelope"></i>
-            <span>联系我们</span>
-            <small>商业合作咨询</small>
-        </a>
-    </div>
-</div>
-
-<div class="content-section">
-    <h2><i class="fas fa-info-circle"></i> 关于项目</h2>
-    
-    <div class="about-content">
-        <p><strong>青禾田 (QingHeTian)</strong> 是一个致力于为AI时代打造完全自主、零依赖底层工具链的开源项目。</p>
-        
-        <p>我们的核心使命是：<strong>把AI智能程序开发沉降到二进制</strong>，让AI开发回归计算机本质，在二进制层面实现真正的智能控制。</p>
-        
-        <p>项目采用 <strong>开源+商业双许可模式</strong>：</p>
-        <ul>
-            <li>🆓 <strong>个人使用完全免费</strong> (GPL v3.0许可证)</li>
-            <li>⏳ <strong>商业授权规划中</strong> (保持灵活性，根据市场需求调整)</li>
-        </ul>
-        
-        <p>技术特性：</p>
-        <ul>
-            <li>🚀 <strong>零依赖架构</strong>：纯二进制实现，不依赖任何外部库</li>
-            <li>🤖 <strong>AI专用设计</strong>：自然语言接口，结构化输出</li>
-            <li>🔧 <strong>完全自主</strong>：网络协议、加密算法全部自主实现</li>
-            <li>📱 <strong>高性能优化</strong>：针对二进制操作深度优化</li>
-        </ul>
-        
-        <p>了解更多：</p>
-        <div class="learn-more-links">
-            <a href="/QingHeTian-BinaryEditor/2026/04/02/project-launch.html" class="btn btn-small">
-                <i class="fas fa-rocket"></i> 项目启动公告
-            </a>
-            <a href="/QingHeTian-BinaryEditor/2026/04/02/technical-architecture.html" class="btn btn-small">
-                <i class="fas fa-code"></i> 技术架构解析
-            </a>
+        <div class="visualization-container">
+            <div class="visualization-header">
+                <h2>🌐 模商数列可视化</h2>
+                <p>公式：aₙ = ((n-1) mod a + 1) / ((n-1) mod b + 1)</p>
+            </div>
+            <div id="visualization">
+                <!-- 可视化内容将通过JavaScript加载 -->
+            </div>
         </div>
+        
+        <div class="content-section">
+            <h2><i class="fas fa-bullseye"></i> 项目核心定位</h2>
+            
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>二进制沉降</h3>
+                    <p>把AI智能程序开发沉降到二进制层面，回归计算机本质</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>纯二进制实现</h3>
+                    <p>零依赖，从底层重新定义AI开发工具</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI驱动</h3>
+                    <p>为AI助手时代专门优化的自然语言接口</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-unlock-alt"></i>
+                    <h3>完全自主</h3>
+                    <p>不依赖任何外部库，完全可控的工具链</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2><i class="fas fa-external-link-alt"></i> 快速链接</h2>
+            
+            <div class="link-grid">
+                <a href="https://github.com/pengzihua2026-anyang/QingHeTian-BinaryEditor" class="link-card" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub 仓库</span>
+                    <small>查看源代码和贡献</small>
+                </a>
+                
+                <a href="/QingHeTian-BinaryEditor/blog/" class="link-card">
+                    <i class="fas fa-blog"></i>
+                    <span>技术博客</span>
+                    <small>深度技术思考</small>
+                </a>
+                
+                <a href="/QingHeTian-BinaryEditor/2026/04/02/project-launch.html" class="link-card">
+                    <i class="fas fa-rocket"></i>
+                    <span>项目启动</span>
+                    <small>项目启动公告</small>
+                </a>
+                
+                <a href="mailto:pengzihua2026@163.com" class="link-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>联系我们</span>
+                    <small>商业合作咨询</small>
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/pengzihua2026-anyang" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:pengzihua2026@163.com">
+                    <i class="fas fa-envelope"></i> 邮箱
+                </a>
+            </div>
+            <p>© 2026 彭. 保留所有权利。</p>
+            <p>安阳子涵软件开发有限公司</p>
+            <p>最后更新: 2026年4月4日</p>
+        </footer>
     </div>
-</div>
+    
+    <!-- 加载可视化脚本 -->
+    <script type="module">
+        // 这里可以加载你的可视化脚本
+        // 由于可视化代码较长，我们可以将其放在单独的文件中
+        // 或者直接内联在这里
+        
+        console.log('青禾田可视化首页加载完成');
+        
+        // 简单的占位符 - 实际应该加载完整的可视化代码
+        const visualizationDiv = document.getElementById('visualization');
+        visualizationDiv.innerHTML = `
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#050b1a;color:white;border-radius:15px;">
+                <div style="text-align:center;">
+                    <i class="fas fa-cube" style="font-size:60px;margin-bottom:20px;color:#667eea;"></i>
+                    <h3 style="margin-bottom:10px;">模商数列 3D 可视化</h3>
+                    <p>公式：aₙ = ((n-1) mod a + 1) / ((n-1) mod b + 1)</p>
+                    <p style="margin-top:20px;font-size:14px;color:#aaa;">交互式 3D 可视化正在加载中...</p>
+                </div>
+            </div>
+        `;
+        
+        // 提示用户可视化需要单独加载
+        setTimeout(() => {
+            visualizationDiv.innerHTML += `
+                <div style="position:absolute;bottom:20px;left:0;right:0;text-align:center;">
+                    <a href="/QingHeTian-BinaryEditor/visualizations/modular-quotient.html" 
+                       style="background:#667eea;color:white;padding:10px 20px;border-radius:25px;text-decoration:none;display:inline-block;">
+                        <i class="fas fa-external-link-alt"></i> 查看完整可视化
+                    </a>
+                </div>
+            `;
+        }, 2000);
+    </script>
+</body>
+</html>
