@@ -30,6 +30,7 @@ We believe that in the age of widespread AI assistants, there is a need for **fu
 - **File analysis**: Automatic file type and structure recognition
 - **Network communication**: TCP/IP + HTTP + TLS (self-implemented)
 - **Encryption algorithms**: AES + SHA256 (self-implemented)
+- **Memory management**: Self-implemented memory mapping (replaces mmap)
 
 ### 🛡️ **Secure & Reliable**
 - **Memory safety**: Comprehensive error handling and boundary checking
@@ -40,10 +41,24 @@ We believe that in the age of widespread AI assistants, there is a need for **fu
 
 ```
 qinghetian/
-├── src/                    # Source code
+├── ai_bin_editor          # Main executable program (AI integrated version)
+├── Makefile               # Build configuration
+├── binary.xcodeproj       # Xcode project file
+├── README.md              # This document
+├── .ai_binary_config      # AI configuration file
+├── .gitignore             # Git ignore rules
+│
+├── src/                   # Source code
 │   ├── core/              # Core binary editing
 │   │   ├── hex_editor.c   # Hex editor core
-│   │   └── hex_editor.h   # Core header file
+│   │   ├── hex_editor.h   # Core header file
+│   │   ├── ai_comm.c      # AI process communication
+│   │   └── ai_comm.h      # Communication protocol
+│   ├── memory/            # 自主内存管理模块 (2026-04-03新增)
+│   │   ├── qh_mem.h       # 内存管理接口 (替代mmap)
+│   │   ├── qh_mem.c       # 自主内存管理实现
+│   │   ├── test_qh_mem.c  # 单元测试
+│   │   └── example_usage.c # 使用示例
 │   ├── ai/                # AI integration module
 │   │   ├── ai_integration.c  # AI model integration
 │   │   ├── ai_interface.c    # AI command line interface
@@ -59,18 +74,56 @@ qinghetian/
 │   └── main/              # Main program
 │       ├── ai_main_new.c  # AI version main program
 │       └── main.c         # Basic version main program
-├── tools/                 # Tool scripts
-│   └── proxy_server.py    # Python proxy server
+│
 ├── docs/                  # Documentation
 │   ├── AI_USAGE.md        # AI usage guide
 │   ├── AI_INTEGRATION.md  # AI integration documentation
-│   └── PROJECT_SUMMARY.md # Project summary
+│   ├── PROJECT_SUMMARY.md # Project summary
+│   ├── PROJECT_STRUCTURE.md # Complete file description
+│   ├── RELEASE_BILINGUAL.md # Bilingual release notes
+│   ├── BILINGUAL_WORKFLOW.md # Bilingual workflow
+│   ├── CONTRIBUTING.md    # Contribution guidelines
+│   └── CONTRIBUTORS.md    # Contributor list
+│
 ├── examples/              # Example files
 │   └── test.bin           # Test binary file
+│
 ├── resources/             # Resource files
 │   └── binary_resources/  # Binary development resource library
-├── Makefile               # Build configuration
-└── README.md              # This document
+│
+├── tools/                 # Tool scripts
+│   └── proxy_server.py    # Python proxy server
+│
+├── scripts/               # Build and utility scripts
+│   ├── add_gpl_headers.sh # Add GPL headers to source files
+│   ├── create_release.py  # Create release packages
+│   ├── fix_paths.sh       # Fix file paths
+│   ├── fix_xcode_project.py # Fix Xcode project
+│   ├── publish_release.sh # Publish releases
+│   ├── setup_github.sh    # Setup GitHub repository
+│   └── update_release.py  # Update release information
+│
+├── legal/                 # Legal and licensing files
+│   ├── LICENSE            # Main license file
+│   ├── LICENSE.GPL        # GPL license full text
+│   ├── COMMERCIAL-LICENSE.md # Commercial license framework
+│   ├── PRICING.md         # Pricing framework
+│   └── CONTACT.md         # Contact information
+│
+├── reports/               # Project reports and status
+│   ├── release_notes.md   # Release notes
+│   ├── simple_release.md  # Simple release documentation
+│   ├── 协议设置实施报告.md # License implementation report
+│   ├── 项目清理报告.md     # Project cleanup report
+│   └── 项目状态报告.md     # Project status report
+│
+└── zihua/                 # Personal workspace (not committed to Git)
+    ├── tests/             # Test files
+    ├── drafts/            # Draft documents
+    ├── communications/    # Communication records
+    ├── notes/             # Personal notes
+    ├── temp/              # Temporary files
+    └── archives/          # Archived files
 ```
 
 ## 🚀 Quick Start
@@ -292,6 +345,7 @@ Special thanks to the open source community for inspiration and technical suppor
 - **文件分析**：自动识别文件类型和结构
 - **网络通信**：TCP/IP + HTTP + TLS（自主实现）
 - **加密算法**：AES + SHA256（自主实现）
+- **内存管理**：自主实现的内存映射（替代mmap）
 
 ### 🛡️ **安全可靠**
 - **内存安全**：完善的错误处理和边界检查
@@ -494,7 +548,7 @@ AI: 已在文件末尾添加签名"Created by AI"...
   - 项目发起人和主要开发者
   - 架构设计和核心实现
 
-- **彭子华** (爸爸) - 技术指导和架构顾问
+- **彭** (爸爸) - 技术指导和架构顾问
   - 面向对象编程原则指导
   - 项目愿景和技术路线
 

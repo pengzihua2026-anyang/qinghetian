@@ -1,9 +1,16 @@
-# AI二进制编辑器 - 项目结构
+# 青禾田 (QingHeTian) - 项目结构
 
 ## 📁 项目目录结构
 
 ```
-binary/                          # 主项目目录
+qinghetian/                      # 主项目目录
+├── ai_bin_editor                # 主可执行程序（AI集成版本）
+├── Makefile                     # 构建配置
+├── binary.xcodeproj             # Xcode项目文件
+├── README.md                    # 项目总览文档
+├── .ai_binary_config            # AI配置文件
+├── .gitignore                   # Git忽略规则
+│
 ├── src/                         # 源代码
 │   ├── core/                    # 核心二进制编辑功能
 │   │   ├── hex_editor.c         # 十六进制编辑器核心
@@ -26,19 +33,57 @@ binary/                          # 主项目目录
 │       ├── ai_main.c            # 原始AI主程序
 │       ├── ai_main_new.c        # 新版AI主程序
 │       └── main.c               # 基础版本主程序
-├── tools/                       # 工具脚本
-│   └── proxy_server.py          # Python代理服务器
+│
 ├── docs/                        # 文档
 │   ├── README.md                # 项目总览
 │   ├── AI_USAGE.md              # AI使用指南
 │   ├── AI_INTEGRATION.md        # AI集成文档
-│   └── PROJECT_SUMMARY.md       # 项目总结
-├── resources/                   # 资源文件
-│   └── binary_resources/        # 二进制开发资源
+│   ├── PROJECT_SUMMARY.md       # 项目总结
+│   ├── PROJECT_STRUCTURE.md     # 项目结构文档（本文档）
+│   ├── RELEASE_BILINGUAL.md     # 双语发布说明
+│   ├── BILINGUAL_WORKFLOW.md    # 双语工作流程
+│   ├── CONTRIBUTING.md          # 贡献指南
+│   └── CONTRIBUTORS.md          # 贡献者列表
+│
 ├── examples/                    # 示例文件
 │   └── test.bin                 # 测试二进制文件
-├── Makefile                     # 构建配置
-└── .ai_binary_config            # AI配置（用户生成）
+│
+├── resources/                   # 资源文件
+│   └── binary_resources/        # 二进制开发资源
+│
+├── tools/                       # 工具脚本
+│   └── proxy_server.py          # Python代理服务器
+│
+├── scripts/                     # 构建和工具脚本
+│   ├── add_gpl_headers.sh       # 添加GPL头文件到源文件
+│   ├── create_release.py        # 创建发布包
+│   ├── fix_paths.sh             # 修复文件路径
+│   ├── fix_xcode_project.py     # 修复Xcode项目
+│   ├── publish_release.sh       # 发布版本
+│   ├── setup_github.sh          # 设置GitHub仓库
+│   └── update_release.py        # 更新发布信息
+│
+├── legal/                       # 法律和许可证文件
+│   ├── LICENSE                  # 主许可证文件
+│   ├── LICENSE.GPL              # GPL许可证完整文本
+│   ├── COMMERCIAL-LICENSE.md    # 商业许可证框架
+│   ├── PRICING.md               # 定价框架
+│   └── CONTACT.md               # 联系信息
+│
+├── reports/                     # 项目报告和状态
+│   ├── release_notes.md         # 发布说明
+│   ├── simple_release.md        # 简单发布文档
+│   ├── 协议设置实施报告.md       # 许可证实施报告
+│   ├── 项目清理报告.md           # 项目清理报告
+│   └── 项目状态报告.md           # 项目状态报告
+│
+└── zihua/                       # 个人工作区（不提交到Git）
+    ├── tests/                   # 测试文件
+    ├── drafts/                  # 草稿文档
+    ├── communications/          # 沟通记录
+    ├── notes/                   # 个人笔记
+    ├── temp/                    # 临时文件
+    └── archives/                # 归档文件
 ```
 
 ## 📄 核心文件功能描述
@@ -217,7 +262,7 @@ MIT License - 详见 LICENSE 文件
 ## 👥 作者
 
 - **子华** (爸爸的女儿) 👧 - 项目发起人和主要开发者
-- **彭子华** (爸爸) - 技术指导和架构设计
+- **彭** (爸爸) - 技术指导和架构设计
 
 ## 🌟 项目愿景
 

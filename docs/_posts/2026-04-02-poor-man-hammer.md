@@ -3,7 +3,7 @@ layout: post
 title: "穷得只剩裤衩子，我们造了一把锤子"
 date: 2026-04-02 15:30:00 +0800
 categories: [AI革命, 安全哲学]
-author: 彭子华 & DeepSeek
+author: 彭 & DeepSeek
 ---
 
 # 穷得只剩裤衩子，我们造了一把锤子

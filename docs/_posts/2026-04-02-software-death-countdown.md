@@ -3,7 +3,7 @@ layout: post
 title: "软件开始死亡倒计时"
 date: 2026-04-02 15:35:00 +0800
 categories: [AI革命, 技术预言]
-author: 彭子华
+author: 彭
 ---
 
 # 软件开始死亡倒计时
