@@ -9,7 +9,7 @@ permalink: /2026/04/03/modular-quotient-visualization.html
 # 模商数列可视化：数学之美与AI协作
 
 <div class="visualization-container">
-    <iframe src="/qinghetian/visualizations/modular-quotient.html" width="100%" height="800px" frameborder="0" scrolling="no"></iframe>
+    <iframe src="/QingHeTian-BinaryEditor/visualizations/modular-quotient.html" width="100%" height="800px" frameborder="0" scrolling="no"></iframe>
     <p class="caption">交互式模商数列可视化 - 使用鼠标拖拽旋转视角，滚动缩放</p>
 </div>
 

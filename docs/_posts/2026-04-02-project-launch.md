@@ -142,7 +142,7 @@ AI> 打开test.bin并显示前16个字节
 
 - **GitHub**: [pengzihua2026-anyang/qinghetian](https://github.com/pengzihua2026-anyang/qinghetian)
 - **邮箱**: pengzihua2026@163.com
-- **讨论区**: [GitHub Discussions](https://github.com/pengzihua2026-anyang/qinghetian/discussions)
+- **讨论区**: [GitHub Discussions](https://github.com/pengzihua2026-anyang/QingHeTian-BinaryEditor/discussions)
 
 ---
 
@@ -288,7 +288,7 @@ Become the **standard toolchain for binary AI development**, returning AI develo
 
 - **GitHub**: [pengzihua2026-anyang/qinghetian](https://github.com/pengzihua2026-anyang/qinghetian)
 - **Email**: pengzihua2026@163.com
-- **Discussions**: [GitHub Discussions](https://github.com/pengzihua2026-anyang/qinghetian/discussions)
+- **Discussions**: [GitHub Discussions](https://github.com/pengzihua2026-anyang/QingHeTian-BinaryEditor/discussions)
 
 ---
 

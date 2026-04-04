@@ -30,7 +30,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-访问 http://localhost:4000/qinghetian/ 查看网站
+访问 http://localhost:4000/QingHeTian-BinaryEditor/ 查看网站
 
 ## 部署到GitHub Pages
 
@@ -83,5 +83,5 @@ author: 作者名
 ## 联系方式
 
 - 项目主页: https://github.com/pengzihua2026-anyang/qinghetian
-- 网站地址: https://pengzihua2026-anyang.github.io/qinghetian/
+- 网站地址: https://pengzihua2026-anyang.github.io/QingHeTian-BinaryEditor/
 - 作者邮箱: pengzihua2026@163.com
